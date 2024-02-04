@@ -81,6 +81,16 @@ local plugins = {
     },
   },
 
+  {
+    "jbyuki/nabla.nvim", 
+    lazy = true, 
+    ft = {"markdown"}, 
+    ensure_installed = {"latex"},
+    config = function() 
+      require("nabla").enable_virt({ autogen = true, silent = true, })
+    end
+  },
+
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
