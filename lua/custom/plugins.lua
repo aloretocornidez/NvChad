@@ -1,4 +1,4 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require "custom.configs.overrides"
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -26,8 +26,7 @@ local plugins = {
   {
     "williamboman/mason.nvim",
     opts = overrides.mason,
-    ensure_installed={
-    }
+    ensure_installed = {},
   },
 
   {
@@ -51,7 +50,7 @@ local plugins = {
 
   {
     "epwalsh/obsidian.nvim",
-    version = "*",  -- recommended, use latest release instead of latest commit
+    version = "*", -- recommended, use latest release instead of latest commit
     lazy = true,
     ft = "markdown",
     -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
@@ -62,33 +61,32 @@ local plugins = {
     --   "BufNewFile path/to/my-vault/**.md",
     -- },
     dependencies = {
-    -- Required. 
+      -- Required.
       "nvim-lua/plenary.nvim",
       -- see below for full list of optional dependencies 👇
     },
     opts = {
       workspaces = {
         -- {
-          -- name = "personal",
-          -- path = "~/vaults/personal",
+        -- name = "personal",
+        -- path = "~/vaults/personal",
         -- },
         -- {
-          -- name = "work",
-          -- path = "~/vaults/work",
+        -- name = "work",
+        -- path = "~/vaults/work",
         -- },
       },
-
     },
   },
 
   {
-    "jbyuki/nabla.nvim", 
-    lazy = true, 
-    ft = {"markdown"}, 
-    ensure_installed = {"latex"},
-    config = function() 
-      require("nabla").enable_virt({ autogen = true, silent = true, })
-    end
+    "jbyuki/nabla.nvim",
+    lazy = true,
+    ft = { "markdown" },
+    ensure_installed = { "latex" },
+    config = function()
+      require("nabla").enable_virt { autogen = true, silent = true }
+    end,
   },
 
   -- To make a plugin not be loaded
