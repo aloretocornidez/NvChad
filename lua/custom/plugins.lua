@@ -85,7 +85,7 @@ local plugins = {
     ft = { "markdown" },
     ensure_installed = { "latex" },
     config = function()
-      require("nabla").enable_virt { autogen = true, silent = true }
+      -- require("nabla").enable_virt { autogen = true, silent = true }
     end,
   },
 
