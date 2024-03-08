@@ -12,6 +12,7 @@ local servers = {
   "pyright",
   "hdl_checker",
   "bashls",
+  "cmake"
 }
 
 for _, lsp in ipairs(servers) do
