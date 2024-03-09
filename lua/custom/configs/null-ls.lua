@@ -7,23 +7,37 @@ local sources = {
   -- Python Formatting
   b.diagnostics.mypy,
   b.diagnostics.ruff,
-  b.formatting.black.with{filetypes = {"python"}},
+  b.formatting.black.with { filetypes = { "python" } },
 
   -- webdev stuff
-  b.formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast!
+  b.formatting.deno_fmt,                                                    -- choosed deno for ts/js files cuz its very fast!
   b.formatting.prettier.with { filetypes = { "html", "markdown", "css" } }, -- so prettier works only on these filetypes
 
   -- Lua
   b.formatting.stylua,
 
   -- cpp
-  b.formatting.clang_format,
+  b.formatting.clang_format.with {
+    args = {
+      -- "-style=file:/home/alan-manuel/.config/nvim/lua/custom/configs/.clang-format",
+      -- '--style="{BasedOnStyle: llvm, ColumnLimit: 1000, BreakBeforeBraces: Allman}"',
+      -- "-style=file:" .. vim.fn.expand "~/.config/nvim/lua/custom/configs/.clang-format",
+    },
+  },
 
-  -- markdown 
+  -- markdown
   -- b.formatting.cspell.with{filetypes = {"markdown"}},
-  b.diagnostics.cspell.with{filetypes = {"markdown"}},
+  b.diagnostics.cspell.with {
+    filetypes = { "markdown" },
 
-  -- bash 
+    -- config = {
+    --   find_json = function(cwd)
+    --     return vim.fn.expand(cwd .. "/cspell.json")
+    --   end,
+    -- },
+  },
+
+  -- bash
   -- b.diagnostics.bash-language-server.with{filetypes={"bash"}},
 }
 

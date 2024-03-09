@@ -29,7 +29,8 @@ lspconfig.clangd.setup {
   cmd = {
     "clangd",
     "--offset-encoding=utf-16",
-    "--style=file",
+    -- "-style=file",
+    -- "-style=file:/home/alan-manuel/.config/nvim/lua/custom/configs/clang-format"
   },
 }
 --
