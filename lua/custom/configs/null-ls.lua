@@ -27,15 +27,15 @@ local sources = {
 
   -- markdown
   -- b.formatting.cspell.with{filetypes = {"markdown"}},
-  b.diagnostics.cspell.with {
-    filetypes = { "markdown" },
+  -- b.diagnostics.cspell.with {
+  -- filetypes = { "markdown" },
 
-    -- config = {
-    --   find_json = function(cwd)
-    --     return vim.fn.expand(cwd .. "/cspell.json")
-    --   end,
-    -- },
-  },
+  -- config = {
+  --   find_json = function(cwd)
+  --     return vim.fn.expand(cwd .. "/cspell.json")
+  --   end,
+  -- },
+  -- },
 
   -- bash
   -- b.diagnostics.bash-language-server.with{filetypes={"bash"}},
