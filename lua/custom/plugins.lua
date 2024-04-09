@@ -66,10 +66,10 @@ local plugins = {
     },
     opts = {
       workspaces = {
-        -- {
-        -- name = "personal",
-        -- path = "~/vaults/personal",
-        -- },
+        {
+        name = "personal",
+        path = "~/Downloads/school-notes/notes/spring-2024/",
+        },
         -- {
         -- name = "work",
         -- path = "~/vaults/work",
