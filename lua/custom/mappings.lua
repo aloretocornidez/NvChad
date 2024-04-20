@@ -32,7 +32,7 @@ M.nabla = {
     --   "Popup Equation",
     -- },
     ["<leader>lt"] = {":lua require(\"nabla\").toggle_virt({autogen = true}) <CR>", "Toggle Latex"},
-    ["<leader>lr"] = {":lua require(\"nabla\").enable_virt({autogen = true}) <CR>", "Enable Latex"},
+    ["<leader>le"] = {":lua require(\"nabla\").enable_virt({autogen = true}) <CR>", "Enable Latex"},
     ["<leader>lp"] = {":lua require(\"nabla\").popup() <CR>", "Popup Latex"},
   },
 }
