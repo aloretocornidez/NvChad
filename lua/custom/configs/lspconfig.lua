@@ -11,8 +11,7 @@ local servers = {
   "pyright",
   "hdl_checker",
   "bashls",
-  "cmake",
-  "matlab_ls",
+  -- "cmake",
 }
 
 for _, lsp in ipairs(servers) do

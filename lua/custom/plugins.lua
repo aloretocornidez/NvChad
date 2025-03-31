@@ -64,18 +64,18 @@ local plugins = {
       -- Required.
       "nvim-lua/plenary.nvim",
     },
-    opts = {
-      workspaces = {
-        {
-        name = "personal",
-        path = "~/Downloads/school-notes/notes/spring-2024/",
-        },
-        -- {
-        -- name = "work",
-        -- path = "~/vaults/work",
-        -- },
-      },
-    },
+    -- opts = {
+    --   workspaces = {
+    --     {
+    --       name = "personal",
+    --       path = "~/Downloads/",
+    --     },
+    --     -- {
+    --     -- name = "work",
+    --     -- path = "~/vaults/work",
+    --     -- },
+    --   },
+    -- },
   },
 
   {
@@ -114,7 +114,7 @@ local plugins = {
     --     reading_text = "Reading %s",
     --     workspace_text = "Working on %s",
     --     line_number_text = "Line %s out of %s",
-    --   }
+    -- }
     -- end,
   },
 
